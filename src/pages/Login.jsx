@@ -2,20 +2,60 @@
 
 import '../styles/Login.css';
 import GoogleIcon from '../assets/icons/icons8-google.svg?react';
+
+import { useState } from 'react';
+import { doSignInWithEmailAndPassword } from '../firebase/auth';
+import { Link, useNavigate } from 'react-router-dom';
+
+
+
+
 const Login= () => {
+  const navigate = useNavigate();
+const [email, setEmail] = useState('');
+const [password, setPassword] = useState('');
+
+const onSubmit = async (e) => {
+  e.preventDefault();
+
+  try {
+    await doSignInWithEmailAndPassword(email, password);
+    console.log("user logged in ")
+    navigate('/postlogin');
+  } catch (error) {
+    console.log(error.message);
+  } finally {
+   
+    setEmail('');
+    setPassword('');
+  }
+};
+
+
+   
   return (
     <div className='login-wrapper'>
       <div className='login-header'>
         <h2>Login to your acccount</h2>
         <p>Please sign in to your account</p>
-        <form action=''>
+        <form onSubmit={onSubmit}>
           <label htmlFor='email'>Email Address</label>
-          <input id='email' type='email' placeholder='johndoe@gmail.com' />
-          <label htmlFor='username'>User Name</label>
-          <input type='text' id='username' />
+          <input
+            id='email'
+            type='email'
+            placeholder='johndoe@gmail.com'
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+
           <label htmlFor='password'>Password</label>
-          
-          <button>Register</button>
+          <input
+            id='password'
+            type='password'
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <button type='submit'>Login</button>
         </form>
         <div className='login-footer'>
           <div className='hr-lines'>
@@ -24,7 +64,7 @@ const Login= () => {
           <div className='footer-base'>
             <GoogleIcon width='25' height='25' />
             <p>
-              Have an Account ? <a>Sign In</a>
+              Don't have an Account? <Link to='/registration'>Register</Link>
             </p>
           </div>
         </div>
