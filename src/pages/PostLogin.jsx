@@ -11,7 +11,9 @@ const PostLogin = () => {
         <Link to='/tracking'>
           <button>Go to Tracking Screen</button>
         </Link>
-        <p>Logout</p>
+        <Link to='/login'>
+          <p>Logout</p>
+        </Link>
       </div>
     </div>
   );
