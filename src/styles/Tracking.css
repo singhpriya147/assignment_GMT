@@ -1,0 +1,19 @@
+.tracking-wrapper{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ height: 100vh;
+ width: 100vw;
+}
+.tracking-wrapper .header{
+ position: absolute;
+ top:0px;
+}
+.slider{
+ position: absolute;
+  bottom: 0.4rem;
+  background-color: rgb(254, 254, 254);
+  border-radius: 23px;
+  padding: 1rem;
+}
