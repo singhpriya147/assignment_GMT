@@ -1,26 +1,25 @@
 import '../styles/Registration.css'
 import  GoogleIcon from '../assets/icons/icons8-google.svg?react';
 
-// import { useAuth } from '../context/authContext';
+import { useAuth } from '../context/authContext';
 import { doCreateUserWithEmailAndPassword } from '../firebase/auth';
 import {doSignInWithGoogle} from '../firebase/auth'
 import { useState } from 'react';
 import { Link} from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate ,Navigate } from 'react-router-dom';
 // import {toast} from 'react-toastify'
 
 
 const Registration = () => {
 
-  const navigate = useNavigate();
 const[email,setEmail]=useState('');
 const[password,setPassword]=useState('');
 const[username,setUsername]=useState('');
 // const[isRegistering,setIsRegistering]=useState(false);
 // const[errorMessage,setErrorMessage]=useState('')
 
-// const{userLoggedIn}=useAuth()
-// const navigate = useNavigate();
+const{userLoggedIn}=useAuth()
+const navigate = useNavigate();
 const onSubmit=async(e)=>{
 e.preventDefault();
 
@@ -54,7 +53,7 @@ try {
 
   return (
     <>
-      {/* {userLoggedIn && <Navigate to={'/postlogin'} replace={true} />} */}
+      {userLoggedIn && <Navigate to={'/postlogin'} replace={true} />}
 
       <div className='registration-wrapper'>
         <div className='regis-header'>
