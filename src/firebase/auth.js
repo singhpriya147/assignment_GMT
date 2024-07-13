@@ -7,6 +7,7 @@ import {
   updatePassword,
   signInWithPopup,
   GoogleAuthProvider,
+  onAuthStateChanged,
 } from 'firebase/auth';
 
 export const doCreateUserWithEmailAndPassword = async (email, password) => {
@@ -43,3 +44,7 @@ export const doSendEmailVerification = () => {
     url: `${window.location.origin}/home`,
   });
 };
+
+export const doOnAuthStateChanged=()=>{
+  return onAuthStateChanged(auth);
+}

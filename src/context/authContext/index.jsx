@@ -1,8 +1,9 @@
 import React, { useContext, useState, useEffect } from 'react';
 import { auth } from '../../firebase/firebase';
 
-import { onAuthStateChanged } from 'firebase/auth';
+
 import { GoogleAuthProvider } from 'firebase/auth';
+import { doOnAuthStateChanged } from '../../firebase/auth';
 
 const AuthContext = React.createContext();
 
@@ -18,7 +19,7 @@ export function AuthProvider({ children }) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const unsubscribe = onAuthStateChanged(auth, initializeUser);
+    const unsubscribe = doOnAuthStateChanged(auth, initializeUser);
     return unsubscribe;
   }, []);
 
