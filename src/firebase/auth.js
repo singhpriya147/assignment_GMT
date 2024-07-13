@@ -7,7 +7,7 @@ import {
   updatePassword,
   signInWithPopup,
   GoogleAuthProvider,
-  onAuthStateChanged,
+
 } from 'firebase/auth';
 
 export const doCreateUserWithEmailAndPassword = async (email, password) => {
@@ -45,6 +45,4 @@ export const doSendEmailVerification = () => {
   });
 };
 
-export const doOnAuthStateChanged=()=>{
-  return onAuthStateChanged(auth);
-}
+
