@@ -16,7 +16,7 @@ This web app is assignment for frontend role at Get Me Therapy . Get access at [
 ## Overview
 This web application includes a login and authentication system along with a unique tracking screen. Users can log in, sign up, and access a tracking screen featuring an analog clock, a speed control slider, and a share button for generating a unique URL. The tracking screen can optionally display random quotes that update every 5 seconds.
 
-## Feature
+## Features
 ### Onboard page
 - It contain onboard slides informing user speciality of web app.
 ### Login and Authentication
