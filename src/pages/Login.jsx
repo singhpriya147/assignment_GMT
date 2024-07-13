@@ -5,6 +5,7 @@ import GoogleIcon from '../assets/icons/icons8-google.svg?react';
 
 import { useState } from 'react';
 import { doSignInWithEmailAndPassword } from '../firebase/auth';
+import { doSignInWithGoogle } from '../firebase/auth';
 import { Link, useNavigate } from 'react-router-dom';
 
 
@@ -31,7 +32,14 @@ const onSubmit = async (e) => {
   }
 };
 
-
+const signInWithGoogle = async () => {
+  try {
+    await doSignInWithGoogle(email, password);
+    navigate('/postlogin');
+  } catch (error) {
+    console.log(error.message);
+  }
+};
    
   return (
     <div className='login-wrapper'>
@@ -62,7 +70,7 @@ const onSubmit = async (e) => {
             <span>Or sign in with</span>
           </div>
           <div className='footer-base'>
-            <GoogleIcon width='25' height='25' />
+            <GoogleIcon width='25' height='25' onClick={signInWithGoogle} />
             <p>
               Don't have an Account? <Link to='/registration'>Register</Link>
             </p>
