@@ -19,7 +19,10 @@ const App = () => {
           path='/postlogin'
           element={userLoggedIn ? <PostLogin /> : <Navigate to='/login' />}
         />
-        <Route path='/tracking' element={<Tracking />} />
+        <Route
+          path='/tracking'
+          element={userLoggedIn ? <Tracking /> : <Navigate to='/login' />}
+        />
       </Routes>
     </Router>
   );
