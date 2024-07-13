@@ -1,5 +1,5 @@
 # Frontend Assignment 
-This web app is assignment for frontend role at Get Me Therapy
+This web app is assignment for frontend role at Get Me Therapy . Get access at [here](https://gmtassignment-b2b47.web.app/)
 
 ## Table of Contents
 
@@ -35,7 +35,7 @@ This web application includes a login and authentication system along with a uni
 - **Random Quotes (Optional)**: Display random quotes that update every 5 seconds using an open API.
 
 ## Usage
-This section provides instructions on how to use SWAAD project on your local machine.
+This section provides instructions on how to use this  project on your local machine.
 
 ### How to Use
 
