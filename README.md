@@ -53,29 +53,40 @@ This section provides instructions on how to use SWAAD project on your local mac
 
 
 ## Screenshots
-1- **Landing page**
+1- **Onboard Page**
 
-![Screenshot (859)](https://github.com/chingu-voyages/v46-tier2-team-14/assets/72970648/418648dd-5d1b-4a44-a7f5-6a2a3f406821)
+![Screenshot (958)](https://github.com/user-attachments/assets/8089828b-0ca1-4297-adc4-e7f1f9ebdcd2)
 
-2- **Recipe Page**
+![Screenshot (959)](https://github.com/user-attachments/assets/6b59ab7f-d2d4-427f-876c-b2b3aa650a47)
 
-![Screenshot (862)](https://github.com/chingu-voyages/v46-tier2-team-14/assets/72970648/9318e465-63db-4886-9c4b-d601d0967a16)
-![Screenshot (863)](https://github.com/chingu-voyages/v46-tier2-team-14/assets/72970648/00bc17a5-6819-4578-bb61-e4cd2f860c6c)
-![Screenshot (865)](https://github.com/chingu-voyages/v46-tier2-team-14/assets/72970648/868b96df-fa01-4881-8e2c-9d475818d373)
-3- **Search Results**
+![Screenshot (960)](https://github.com/user-attachments/assets/bf073726-c0bb-4a77-a745-39cf76cd5d6d)
 
-![Screenshot (864)](https://github.com/chingu-voyages/v46-tier2-team-14/assets/72970648/8b552526-100d-48a7-b8bd-121279d4c131)
+2- **Registration Page**
 
-4- **Search Suggestions**
+![Screenshot (967)](https://github.com/user-attachments/assets/564ba0c6-87f2-428c-a2ec-7eea85f62598)
 
-![Screenshot (861)](https://github.com/chingu-voyages/v46-tier2-team-14/assets/72970648/10cfbff2-3f68-4a71-9661-114898f614f5)
+3- **Login Page**
 
-5- **Previous Searches**
 
-![Screenshot (860)](https://github.com/chingu-voyages/v46-tier2-team-14/assets/72970648/6f0c3017-c9a4-45bd-825b-e4ec2c4c5531)
+![Screenshot (961)](https://github.com/user-attachments/assets/cf0b905c-38fc-4bb4-bf40-ef2533cbc296)
+
+![Screenshot (962)](https://github.com/user-attachments/assets/e4191a74-2a32-401d-9415-0bdde03a309a)
+
+
+4- **Post login page**
+
+![Screenshot (963)](https://github.com/user-attachments/assets/24e34285-ab7f-4b99-8cb4-7b68b4801849)
+
+5- **Tracking page**
+
+![Screenshot (964)](https://github.com/user-attachments/assets/9b494816-7940-40b4-8ee5-0fad2ff7d261)
+
+![Screenshot (965)](https://github.com/user-attachments/assets/c06af6c6-8e4e-426c-9b88-2dea1c6b749c)
+
+![Screenshot (966)](https://github.com/user-attachments/assets/8c3d0d6b-96f9-4288-a8a0-aa1e34a06eb7)
 
 ## Running the Project
-These are the instructions on how to run the SWAAD on your local machine.
+These are the instructions on how to run the asssignment_GMT on your local machine.
 
 ### Prerequisites
 
@@ -96,15 +107,7 @@ Ensure you have the following prerequisites installed on your machine:
     ```bash
     npm install
 
-### Dependencies
 
-- [@headlessui/react](https://www.npmjs.com/package/@headlessui/react): ^1.7.17
-- [@tanstack/react-query](https://www.npmjs.com/package/@tanstack/react-query): ^5.0.0
-- [axios](https://www.npmjs.com/package/axios): ^1.5.1
-- [react](https://www.npmjs.com/package/react): ^18.2.0
-- [react-dom](https://www.npmjs.com/package/react-dom): ^18.2.0
-- [react-icons](https://www.npmjs.com/package/react-icons): ^4.11.0
-- [react-router-dom](https://www.npmjs.com/package/react-router-dom): ^6.16.0
 
 ### Quick Start
 Follow these steps to quickly start the project:
@@ -114,4 +117,4 @@ Follow these steps to quickly start the project:
     ```
 
 2. **Access the Application:**
-   Open your web browser and go to `http://localhost:3000` to access the SWAAD web app.
+   Open your web browser and go to `http://localhost: 5173` to access the  web app.
